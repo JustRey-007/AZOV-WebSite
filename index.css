@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+.all {
+    display: flex;
+}
+
+.intro_overlay {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro_overlay video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 70px;
+    padding: 15px 30px 15px 30px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo-png {
+    max-height: 100%;
+    object-position: center;
+    cursor: pointer;
+}
+
+.btn-join {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 130px;
+    background: linear-gradient(to top, rgb(238, 218, 0) 50%, rgb(44, 44, 205) 50%);
+    color: rgb(225, 109, 0);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.btn-join-hovered {
+    background: linear-gradient(to top, black 50%, rgb(230, 0, 0) 50%);
+    color: rgb(213, 213, 21);
+}
+
+.list-container {
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 750px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
